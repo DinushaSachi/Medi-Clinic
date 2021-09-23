@@ -3,34 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/alarm.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/back.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/background_rounded.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/box.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/button_dr.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/deletebtn.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/dnote_add.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/dnote_delete_24.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/ic_baseline_how_to_reg_24.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/leftconer.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/pnote_add.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/pnote_ic_launcher_background.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/pnote_ic_launcher_foreground.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/pnote_ic_profile_pic.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/pnote_ic_save1.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/pnote_logo.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/pnote_right_round_btn.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/pnote_textbox.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/rightcorner.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/text_bo.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/textbox.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/textbox__2_.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/textboxwhite.xml" value="0.24537037037037038" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_app1page.xml" value="0.1793478260869565" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_create_patient_profile.xml" value="0.16621376811594202" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_doctor.xml" value="0.264" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_app1page.xml" value="0.11820652173913043" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_create_doctor_notice.xml" value="0.11820652173913043" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_create_patient_profile.xml" value="0.11820652173913043" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_doctor.xml" value="0.11820652173913043" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_edit_doctor_notice.xml" value="0.11820652173913043" />
       </map>
     </option>
   </component>
