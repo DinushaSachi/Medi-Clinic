@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_app1page.xml" value="0.1793478260869565" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_doctor.xml" value="0.1793478260869565" />
-        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_app1page.xml" value="0.11820652173913043" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_create_doctor_notice.xml" value="0.11820652173913043" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_create_patient_profile.xml" value="0.11820652173913043" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_doctor.xml" value="0.11820652173913043" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_edit_doctor_notice.xml" value="0.11820652173913043" />
       </map>
     </option>
   </component>
