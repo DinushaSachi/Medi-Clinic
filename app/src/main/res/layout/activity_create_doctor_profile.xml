@@ -19,7 +19,7 @@
         <ImageView
             android:layout_width="124dp"
             android:layout_height="124dp"
-            android:src="@drawable/doca"
+            android:src="@drawable/doca2"
             android:padding="10dp"/>
 
         <ImageView
@@ -27,7 +27,7 @@
             android:layout_height="124dp"
             android:layout_marginLeft="5dp"
             android:padding="3dp"
-            app:srcCompat="@drawable/logo" />
+            app:srcCompat="@drawable/logo2" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
