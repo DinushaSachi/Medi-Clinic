@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateDoctorNotice">
-
+    tools:context=".EditDoctorNotice">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frame0"
@@ -67,6 +66,7 @@
             app:layout_constraintVertical_bias="0.65"
             app:srcCompat="@drawable/doca2" />
 
+
         <TextView
             android:id="@+id/txtView4"
             android:layout_width="396dp"
@@ -76,14 +76,14 @@
             android:freezesText="false"
             android:paddingLeft="20dp"
             android:paddingTop="10dp"
-            android:text="@string/textNoticename"
+            android:text="@string/txtEditNotice"
             android:textAlignment="viewStart"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.259"
+            app:layout_constraintHorizontal_bias="0.304"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageButton7"
             app:layout_constraintVertical_bias="0.03" />
@@ -119,7 +119,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="15dp"
-                android:text="Notices Name "
+                android:text="Notice Name "
                 android:textColor="@color/white"
                 android:textSize="18dp" />
 
@@ -160,11 +160,15 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btnAddData"
-            android:layout_width="121dp"
-            android:layout_height="51dp"
+
+            android:id="@+id/btnUpdateNote"
+
+
+
+            android:layout_width="150dp"
+            android:layout_height="55dp"
             android:fontFamily="sans-serif"
-            android:text="@string/btnsave"
+            android:text="@string/btnUpdate"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColorHighlight="#FFFFFF"
@@ -173,13 +177,13 @@
             android:typeface="normal"
             app:backgroundTint="#FA2BDCCD"
             app:cornerRadius="20dp"
-            app:icon="@drawable/dnote_ic_save1"
+            app:icon="@drawable/dnote_edit_note"
             app:layout_constraintBottom_toBottomOf="@+id/imageView6"
             app:layout_constraintEnd_toEndOf="@+id/imageView6"
-            app:layout_constraintHorizontal_bias="0.93"
+            app:layout_constraintHorizontal_bias="0.922"
             app:layout_constraintStart_toStartOf="@+id/imageView6"
             app:layout_constraintTop_toTopOf="@+id/imageView6"
-            app:layout_constraintVertical_bias="0.813" />
+            app:layout_constraintVertical_bias="0.824" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
