@@ -13,9 +13,6 @@
             android:name=".CreatePatientProfileActivity"
             android:exported="true" />
         <activity
-            android:name=".Doctor"
-            android:exported="true" />
-        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
