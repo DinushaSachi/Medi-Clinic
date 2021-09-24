@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MediClinic">
         <activity
+            android:name=".doctorEditProfile"
+            android:exported="true" />
+        <activity
+            android:name=".patientEditProfile"
+            android:exported="true" />
+        <activity
+            android:name=".Patient"
+            android:exported="true" />
+        <activity
             android:name=".JoinClinicActivity"
             android:exported="true" />
         <activity
