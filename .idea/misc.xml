@@ -3,16 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_app1page.xml" value="0.11820652173913043" />
-        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_create_doctor_notice.xml" value="0.11820652173913043" />
-        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_create_doctor_profile.xml" value="0.11820652173913043" />
-        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_create_patient_profile.xml" value="0.11820652173913043" />
-        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_doctor.xml" value="0.11820652173913043" />
-        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_doctor_delete_dialog.xml" value="0.11820652173913043" />
-        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_doctor_notices_view.xml" value="0.11820652173913043" />
-        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_edit_doctor_notice.xml" value="0.11820652173913043" />
-        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_edit_doctor_notice2.xml" value="0.11820652173913043" />
-        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_main.xml" value="0.11820652173913043" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/MediClinic3/app/src/main/res/layout/activity_create_clinic.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/MediClinic3/app/src/main/res/layout/activity_edit_clinic.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/MediClinic3/app/src/main/res/layout/activity_join_clinic.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/MediClinic3/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
       </map>
     </option>
   </component>
