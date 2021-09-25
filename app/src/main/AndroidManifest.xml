@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MediClinic">
         <activity
+            android:name=".patient_delete_dialog"
+            android:exported="true" />
+        <activity
             android:name=".JoinClinicActivity"
             android:exported="true" />
         <activity
