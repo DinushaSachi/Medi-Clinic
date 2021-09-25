@@ -33,12 +33,14 @@
         <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_doctor.xml" value="0.264" />
         <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_doctor_delete_dialog.xml" value="0.12" />
         <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_doctor_edit_profile.xml" value="0.12760416666666666" />
+        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_doctor_view_profile.xml" value="0.13360507246376813" />
         <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_edit_doctor_notice.xml" value="0.1480978260869565" />
         <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_edit_paient_note.xml" value="0.12760416666666666" />
         <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_join_clinic.xml" value="0.1480978260869565" />
         <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
         <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_patient.xml" value="0.1480978260869565" />
         <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_patient_edit_profile.xml" value="0.12760416666666666" />
+        <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_patient_view_profile.xml" value="0.23385416666666667" />
       </map>
     </option>
   </component>
