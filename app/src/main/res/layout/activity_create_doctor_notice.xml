@@ -19,7 +19,7 @@
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="421dp"
+            android:layout_width="521dp"
             android:layout_height="890dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
