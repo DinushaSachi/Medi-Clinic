@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MediClinic">
         <activity
+            android:name=".reminderPatient"
+            android:exported="true" />
+        <activity
             android:name=".Clinic"
             android:exported="true" />
         <activity

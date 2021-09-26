@@ -43,6 +43,10 @@
         <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_patient_view_profile.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/MediClinic3/app/src/main/res/layout/activity_clinic.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/MediClinic3/app/src/main/res/layout/activity_clinic_view.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/MediClinic3/app/src/main/res/layout/activity_edit_doctor_notice.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/MediClinic3/app/src/main/res/layout/activity_edit_paient_note.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/MediClinic3/app/src/main/res/layout/activity_join_clinic.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/MediClinic3/app/src/main/res/layout/activity_reminder_patient.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
