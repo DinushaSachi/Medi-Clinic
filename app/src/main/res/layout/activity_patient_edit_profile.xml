@@ -4,46 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/_st_back"
+    android:background="@drawable/mainback"
     tools:context=".patientEditProfile"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_height="121dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="124dp"
-            android:layout_height="124dp"
-            android:src="@drawable/patient2"
-            android:padding="10dp"/>
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="vieView"
+            android:padding="10dp"
+            android:src="@drawable/backbtn" />
 
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="124dp"
-            android:layout_marginLeft="5dp"
-            android:padding="3dp"
-            app:srcCompat="@drawable/logo2" />
+        <TextView
+            android:id="@+id/textViewProfileTeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/edit_patient_profile"
+            android:textAlignment="center"
+            android:textColor="#0C0C0C"
+            android:textSize="30sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/sign_as_doc1"
+        android:background="@drawable/main2back"
         android:orientation="vertical"
         android:gravity="center">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/text_view"
-            android:padding="10dp"
-            android:text="Edit Patient Profile"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
+
 
 
         <LinearLayout
@@ -68,8 +67,8 @@
                 android:id="@+id/patientEditName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/dnote_textboxwhite"
                 android:padding="10dp"
-                android:background="@drawable/edit_text"
                 android:textAlignment="textEnd"
                 android:textSize="18sp" />
 
@@ -98,7 +97,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="textEnd"
-                android:background="@drawable/edit_text"
+                android:background="@drawable/dnote_textboxwhite"
                 android:padding="10dp"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -125,7 +124,7 @@
                 android:id="@+id/patientEditEmail"
                 android:layout_width="match_parent"
                 android:padding="10dp"
-                android:background="@drawable/edit_text"
+                android:background="@drawable/dnote_textboxwhite"
                 android:layout_height="wrap_content"
                 android:textAlignment="textEnd"
                 android:textSize="18sp"/>
@@ -153,7 +152,7 @@
                 android:id="@+id/patientEditDOB"
                 android:layout_width="match_parent"
                 android:padding="10dp"
-                android:background="@drawable/edit_text"
+                android:background="@drawable/dnote_textboxwhite"
                 android:layout_height="wrap_content"
                 android:textAlignment="textEnd"
                 android:textSize="18sp"/>
@@ -181,7 +180,7 @@
                 android:id="@+id/patientEditAddress"
                 android:layout_width="match_parent"
                 android:padding="10dp"
-                android:background="@drawable/edit_text"
+                android:background="@drawable/dnote_textboxwhite"
                 android:layout_height="wrap_content"
                 android:textAlignment="textEnd"
                 android:textSize="18sp" />
@@ -210,11 +209,21 @@
                 android:id="@+id/patientEditGender"
                 android:layout_width="match_parent"
                 android:padding="10dp"
-                android:background="@drawable/edit_text"
+                android:background="@drawable/dnote_textboxwhite"
                 android:layout_height="wrap_content"
                 android:textAlignment="textEnd"
                 android:textSize="18sp"/>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"></LinearLayout>
+
 
         <Button
             android:id="@+id/patientEditSave"
