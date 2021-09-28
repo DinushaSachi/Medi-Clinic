@@ -1,4 +1,6 @@
-package com.example.mediclinic
+package com.example.mediclinic;
+
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -34,9 +36,9 @@ public class signPatient extends AppCompatActivity {
         clickhere = findViewById(R.id.doctorclickherepatientlogin);
         signup = findViewById(R.id.signUpPatient);
 
-        signin.setOnClickListener(new android.view.View.OnClickListener() {
+        signin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(android.view.View v) {
+            public void onClick(View v) {
                 LetThePatientLoggedIn();
             }
         });
@@ -65,16 +67,14 @@ public class signPatient extends AppCompatActivity {
 
         Query checkUser = FirebaseDatabase.getInstance().getReference("Patient").orderByChild("patientName").equalTo(_patientusername);
 
+        //login Part
         checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-
                 if (snapshot.exists()){
                     usernameenter.setError(null);
-
                     String passwordDB = snapshot.child(_patientusername).child("password").getValue(String.class);
                     if (passwordDB.equals(_patientpassword)){
-
                         String _patientName = snapshot.child(_patientusername).child("patientName").getValue(String.class);
                         String _patientcontactNo = snapshot.child(_patientusername).child("contactNumber").getValue(String.class);
                         String _patientemail = snapshot.child(_patientusername).child("email").getValue(String.class);
@@ -82,6 +82,7 @@ public class signPatient extends AppCompatActivity {
                         String _patientaddress = snapshot.child(_patientusername).child("address").getValue(String.class);
                         String _patientgender = snapshot.child(_patientusername).child("gender").getValue(String.class);
 
+                        //navigate to pat Dashboard
                         Intent loginPatientIntent = new Intent(signPatient.this,Pat_dashboard.class);
                         loginPatientIntent.putExtra("_patientName",_patientName);
                         loginPatientIntent.putExtra("_patientcontactNo",_patientcontactNo);
@@ -90,11 +91,12 @@ public class signPatient extends AppCompatActivity {
                         loginPatientIntent.putExtra("_patientaddress",_patientaddress);
                         loginPatientIntent.putExtra("_patientgender",_patientgender);
                         startActivity(loginPatientIntent);
+                        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_right);
+
 
                     }else{
                         Toast.makeText(signPatient.this, "Password not correct!", Toast.LENGTH_SHORT).show();
                     }
-
                 }else{
                     Toast.makeText(signPatient.this, "No user Exist!", Toast.LENGTH_SHORT).show();
                 }

@@ -1,6 +1,5 @@
 package com.example.mediclinic;
 
-
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -109,5 +108,4 @@ public class PatientNoteAdapter extends RecyclerView.Adapter<PatientNoteAdapter.
         }
     }
 }
-
 

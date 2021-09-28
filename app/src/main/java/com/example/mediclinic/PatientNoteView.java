@@ -84,7 +84,7 @@ public class PatientNoteView extends AppCompatActivity {
     }
 
     public void vieHome(View view){
-        Intent in = new Intent(PatientNoteView.this, app1page.class);
+        Intent in = new Intent(PatientNoteView.this, Pat_dashboard.class);
         startActivity(in);
     }
 
