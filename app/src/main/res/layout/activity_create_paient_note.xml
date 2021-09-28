@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditPatientNote">
-
-
+    tools:context=".CreatePaientNote">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -25,65 +23,47 @@
             android:layout_height="890dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/main2back" />
-
 
         <ImageView
             android:id="@+id/logo"
-            android:layout_width="93dp"
-            android:layout_height="101dp"
+            android:layout_width="130dp"
+            android:layout_height="121dp"
             android:layout_marginStart="164dp"
             android:onClick="vieHome"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.264"
+            app:layout_constraintHorizontal_bias="0.122"
             app:layout_constraintStart_toEndOf="@+id/btnDelete"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.095"
+            app:layout_constraintVertical_bias="0.078"
             app:srcCompat="@drawable/mainlogo"
             tools:ignore="VectorDrawableCompat" />
 
-        <ImageView
-            android:id="@+id/btnDelete"
-            android:layout_width="80dp"
-            android:layout_height="87dp"
-            android:layout_marginTop="64dp"
-            android:onClick="profile"
-            app:layout_constraintBottom_toTopOf="@+id/imageButton7"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.109"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/patientlogo" />
-
         <TextView
-            android:id="@+id/textViewProfileTeacher"
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="12dp"
-            android:layout_marginTop="317dp"
-            android:layout_marginBottom="228dp"
-            android:gravity="center"
-            android:padding="5dp"
-            android:text="Edit Note"
-            android:textAlignment="center"
-            android:textColor="#0C0C0C"
+            android:layout_marginEnd="28dp"
+            android:text="Create Note"
+            android:textColor="@color/black"
             android:textSize="30sp"
-            android:textStyle="bold"
+
             app:layout_constraintBottom_toTopOf="@+id/imageView6"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintEnd_toStartOf="@+id/logo"
+            app:layout_constraintHorizontal_bias="0.179"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView5"
-            app:layout_constraintVertical_bias="0.831" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.417" />
 
         <ImageView
             android:id="@+id/imageView6"
-            android:layout_width="408dp"
-            android:layout_height="540dp"
+            android:layout_width="422dp"
+            android:layout_height="573dp"
             android:layout_marginTop="32dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -91,17 +71,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtView5"
             app:layout_constraintVertical_bias="1.0"
-            android:foreground="@drawable/mainback"/>
+            android:foreground="@drawable/mainback" />
 
         <LinearLayout
-            android:layout_width="366dp"
-            android:layout_height="519dp"
+            android:layout_width="376dp"
+            android:layout_height="342dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtView4"
-            app:layout_constraintVertical_bias="0.469">
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
 
             <TextView
                 android:id="@+id/textView7"
@@ -117,8 +96,8 @@
             <EditText
                 android:id="@+id/etName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/dnote_textboxwhite"
+                android:layout_height="51dp"
+                android:background="@drawable/text_bo"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:paddingLeft="10dp"
@@ -140,8 +119,8 @@
             <EditText
                 android:id="@+id/etNote"
                 android:layout_width="match_parent"
-                android:layout_height="121dp"
-                android:background="@drawable/dnote_textboxwhite"
+                android:layout_height="166dp"
+                android:background="@drawable/text_bo"
                 android:ems="10"
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
@@ -151,11 +130,11 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btnUpdateNote"
-            android:layout_width="150dp"
-            android:layout_height="55dp"
+            android:id="@+id/btnAddData"
+            android:layout_width="121dp"
+            android:layout_height="51dp"
             android:fontFamily="sans-serif"
-            android:text="@string/btnUpdate"
+            android:text="@string/btnsave"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/black"
@@ -167,11 +146,12 @@
             app:cornerRadius="20dp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView6"
             app:layout_constraintEnd_toEndOf="@+id/imageView6"
-            app:layout_constraintHorizontal_bias="0.922"
+            app:layout_constraintHorizontal_bias="0.87"
             app:layout_constraintStart_toStartOf="@+id/imageView6"
             app:layout_constraintTop_toTopOf="@+id/imageView6"
-            app:layout_constraintVertical_bias="0.824" />
+            app:layout_constraintVertical_bias="0.819" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
