@@ -5,56 +5,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pattern_back"
+    android:background="@drawable/mainback"
     tools:context=".CreatePatientProfileActivity"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
-        app:layout_constraintTop_toTopOf="parent">
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:gravity="center">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="124dp"
-            android:layout_height="102dp"
-            android:layout_margin="10dp"
-            android:onClick="profile"
-            app:srcCompat="@drawable/patient2" />
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="151dp"
-            android:layout_height="109dp"
-            android:layout_margin="10dp"
+            android:layout_width="103dp"
+            android:layout_height="102dp"
+            android:layout_marginLeft="5dp"
             android:onClick="vieHome"
-            app:srcCompat="@drawable/logo2" />
+            android:src="@drawable/patientlogo" />
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="108dp"
+            android:layout_height="104dp"
+            android:layout_marginLeft="5dp"
+            />
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="149dp"
+            android:layout_height="126dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="vieHome"
+            android:src="@drawable/mainlogo" />
     </LinearLayout>
-
     <LinearLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/gradientround"
+        android:layout_height="719dp"
+        android:layout_gravity="center"
+        android:background="@drawable/formhilght"
         android:gravity="center"
         android:orientation="vertical"
-        android:layout_gravity="center"
         android:textAlignment="center">
 
         <TextView
             android:id="@+id/textViewProfileTeacher"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:background="@drawable/text_view"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:padding="5dp"
             android:text="@string/patientView"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:textColor="#0C0C0C"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/patientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/text_bo"
+            android:hint="@string/patNameView"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="18sp" />
 
         <EditText
 
@@ -62,7 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@drawable/edit_text"
+            android:background="@drawable/text_bo"
             android:hint="@string/patAddressView"
             android:inputType="text"
             android:padding="10dp"
@@ -70,84 +88,69 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/patientName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edit_text"
-            android:hint="@string/patNameView"
-            android:padding="10dp"
-            android:layout_margin="10dp"
-            android:inputType="text"
-            android:textSize="18sp"
-            android:textAlignment="center"/>
-
-        <EditText
 
             android:id="@+id/patientNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_text"
-            android:hint="@string/patPhoneView"
-            android:padding="10dp"
-            android:inputType="phone"
             android:layout_margin="10dp"
-            android:textSize="18sp"
+            android:background="@drawable/text_bo"
+            android:hint="@string/patPhoneView"
+            android:inputType="phone"
+            android:padding="10dp"
             android:textAlignment="center"
-            />
+            android:textSize="18sp" />
 
         <EditText
 
             android:id="@+id/patientDOB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_text"
-            android:hint="@string/patBirthView"
-            android:textSize="18sp"
-            android:padding="10dp"
-            android:inputType="date"
             android:layout_margin="10dp"
-            android:textAlignment="center"/>
+            android:background="@drawable/text_bo"
+            android:hint="@string/patBirthView"
+            android:inputType="date"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="18sp" />
 
         <EditText
 
             android:id="@+id/patientEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_text"
-            android:hint="@string/patEmailView"
-            android:textSize="18sp"
-            android:padding="10dp"
-            android:inputType="textEmailAddress"
             android:layout_margin="10dp"
-            android:textAlignment="center"/>
+            android:background="@drawable/text_bo"
+            android:hint="@string/patEmailView"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="18sp" />
 
         <EditText
 
             android:id="@+id/patientPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_text"
-            android:hint="@string/patPassView"
-            android:textSize="18sp"
-            android:padding="10dp"
-            android:inputType="textPassword"
             android:layout_margin="10dp"
-            android:textAlignment="center"/>
+            android:background="@drawable/text_bo"
+            android:hint="@string/patPassView"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="18sp" />
 
         <EditText
 
             android:id="@+id/patientGender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_text"
+            android:layout_margin="10dp"
+            android:background="@drawable/text_bo"
             android:hint="@string/patGenderView"
-            android:textSize="18sp"
             android:inputType="text"
             android:padding="10dp"
-            android:layout_margin="10dp"
-            android:textAlignment="center"/>
-
-
+            android:textAlignment="center"
+            android:textSize="18sp" />
 
 
         <Button
@@ -159,13 +162,35 @@
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:backgroundTint="@color/purple_500" />
+            app:backgroundTint="#241DDA" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textAlignment="center">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?" />
+
+            <TextView
+                android:id="@+id/loginbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="  Login"
+                android:onClick="vieSign"
+                android:textColor="#0022FF" />
+
+        </LinearLayout>
 
 
     </LinearLayout>
 
 
 </LinearLayout>
-

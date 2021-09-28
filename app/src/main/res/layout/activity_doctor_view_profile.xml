@@ -1,48 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/main2back"
     android:layout_height="match_parent"
-    android:background="@drawable/mainback"
-    tools:context=".patientEditProfile"
-    android:orientation="vertical">
-
+    tools:context=".DoctorViewProfile"
+    android:orientation="vertical"
+    android:gravity="center">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="121dp"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
 
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:onClick="vieView"
-            android:padding="10dp"
-            android:src="@drawable/backbtn" />
+            android:id="@+id/imageView5"
+            android:layout_width="89dp"
+            android:layout_height="82dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="vieHome"
+            android:src="@drawable/doclogo" />
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="108dp"
+            android:layout_height="104dp"
+            android:layout_marginLeft="5dp"
+            />
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="149dp"
+            android:layout_height="126dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="vieHome"
+            android:src="@drawable/mainlogo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/formhilght"
+        android:gravity="center">
 
         <TextView
             android:id="@+id/textViewProfileTeacher"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="12dp"
-            android:gravity="center"
-            android:padding="5dp"
-            android:text="@string/edit_patient_profile"
-            android:textAlignment="center"
-            android:textColor="#0C0C0C"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/main2back"
-        android:orientation="vertical"
-        android:gravity="center">
-
+            android:padding="10dp"
+            android:text="@string/doctorView"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
 
 
         <LinearLayout
@@ -57,17 +71,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Patient Name      "
+                android:text="Doctor Name"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="17sp"/>
 
             <TextView
-                android:id="@+id/patientEditName"
+                android:id="@+id/docName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/dnote_textboxwhite"
                 android:padding="10dp"
                 android:textAlignment="textEnd"
                 android:textSize="18sp" />
@@ -86,18 +99,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Contact Number "
+                android:text="Contact Number"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="17sp"/>
-            <EditText
+            <TextView
 
-                android:id="@+id/patientEditPhone"
+                android:id="@+id/docPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="textEnd"
-                android:background="@drawable/dnote_textboxwhite"
                 android:padding="10dp"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -114,17 +126,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email                     "
+                android:text="Email"
                 android:textColor="@color/black"
                 android:textAlignment="textStart"
                 android:textStyle="bold"
                 android:textSize="17sp"/>
-            <EditText
+            <TextView
 
-                android:id="@+id/patientEditEmail"
+                android:id="@+id/docEmail"
                 android:layout_width="match_parent"
                 android:padding="10dp"
-                android:background="@drawable/dnote_textboxwhite"
                 android:layout_height="wrap_content"
                 android:textAlignment="textEnd"
                 android:textSize="18sp"/>
@@ -142,17 +153,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Date of Birth        "
+                android:text="Date of Birth"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="17sp"/>
-            <EditText
+            <TextView
 
-                android:id="@+id/patientEditDOB"
+                android:id="@+id/docDOB"
                 android:layout_width="match_parent"
                 android:padding="10dp"
-                android:background="@drawable/dnote_textboxwhite"
                 android:layout_height="wrap_content"
                 android:textAlignment="textEnd"
                 android:textSize="18sp"/>
@@ -170,17 +180,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Address                "
+                android:text="Address"
                 android:textColor="@color/black"
                 android:textAlignment="textStart"
                 android:textStyle="bold"
                 android:textSize="17sp"/>
-            <EditText
+            <TextView
 
-                android:id="@+id/patientEditAddress"
+                android:id="@+id/docAddress"
                 android:layout_width="match_parent"
                 android:padding="10dp"
-                android:background="@drawable/dnote_textboxwhite"
                 android:layout_height="wrap_content"
                 android:textAlignment="textEnd"
                 android:textSize="18sp" />
@@ -199,45 +208,52 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gender                  "
+                android:text="Gender"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textAlignment="textStart"
                 android:textSize="17sp"/>
-            <EditText
+            <TextView
 
-                android:id="@+id/patientEditGender"
+                android:id="@+id/docGender"
                 android:layout_width="match_parent"
                 android:padding="10dp"
-                android:background="@drawable/dnote_textboxwhite"
                 android:layout_height="wrap_content"
                 android:textAlignment="textEnd"
                 android:textSize="18sp"/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:gravity="center"></LinearLayout>
+            android:gravity="center">
 
+            <Button
+                android:id="@+id/docProfileDelete"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:background="@drawable/button_dr"
+                android:text="@string/deleteBtn"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
 
-        <Button
-            android:id="@+id/patientEditSave"
-            android:layout_width="167dp"
-            android:layout_height="61dp"
-            android:background="@drawable/button_dr"
-            android:text="@string/saveBtn"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:backgroundTint="@color/purple_500" />
+            <Button
+                android:id="@+id/docProfileEdit"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:background="@drawable/button_dr"
+                android:text="@string/editBtn"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
 
 
     </LinearLayout>
+
 
 
 
