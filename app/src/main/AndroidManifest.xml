@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MediClinic">
         <activity
+            android:name=".activity_sign_doctor"
+            android:exported="true" />
+        <activity
             android:name=".DoctorNotices"
             android:exported="true" />
         <activity
