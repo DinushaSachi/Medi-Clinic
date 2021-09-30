@@ -1,61 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/landingimg"
     tools:context=".app1page">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".app1page"
-        android:orientation="vertical">
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="130dp"
-        android:background="@drawable/_st_back"
+
         android:gravity="center"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="123dp"
-            android:layout_height="92dp"
-            app:srcCompat="@drawable/logo2" />
+            android:layout_width="152dp"
+            android:layout_height="158dp"
+            app:srcCompat="@drawable/mainlogo" />
 
     </LinearLayout>
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/docbtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/yst"
-            android:gravity="top"
-            android:orientation="vertical">
+            android:layout_height="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/newpatient" />
 
-            <ImageView
-                android:id="@+id/docbtn"
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
-                app:srcCompat="@drawable/doca_button" />
+        <ImageView
+            android:id="@+id/patientbtn"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/newdocbtn" />
 
-            <ImageView
-                android:id="@+id/patientbtn"
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                app:srcCompat="@drawable/patient_button" />
-
-        </LinearLayout>
     </LinearLayout>
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="343dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/animation"
+        app:lottie_url="https://assets1.lottiefiles.com/packages/lf20_zw7jo1.json" />
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

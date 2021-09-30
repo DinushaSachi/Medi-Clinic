@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_app1page.xml" value="0.1" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_clinic.xml" value="0.10989583333333333" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_create_doctor_notice.xml" value="0.10916919959473151" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_create_doctor_profile.xml" value="0.11820652173913043" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_doctor.xml" value="0.10989583333333333" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_doctor_delete_dialog.xml" value="0.10989583333333333" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_doctor_edit_profile.xml" value="0.11820652173913043" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_doctor_notices_view.xml" value="0.10989583333333333" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_doctor_view_profile.xml" value="0.10989583333333333" />
+        <entry key="..\:/MADD PROJECT/app/src/main/res/layout/activity_edit_doctor_notice.xml" value="0.10989583333333333" />
         <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/alarm.xml" value="0.24537037037037038" />
         <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/back.xml" value="0.24537037037037038" />
         <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/drawable/background_rounded.xml" value="0.24537037037037038" />
@@ -41,14 +51,6 @@
         <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_patient.xml" value="0.1480978260869565" />
         <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_patient_edit_profile.xml" value="0.12760416666666666" />
         <entry key="..\:/Medi Clinic/Medi-Clinic/app/src/main/res/layout/activity_patient_view_profile.xml" value="0.23385416666666667" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/MediClinic3/app/src/main/res/layout/activity_clinic.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/MediClinic3/app/src/main/res/layout/activity_clinic_view.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/MediClinic3/app/src/main/res/layout/activity_edit_doctor_notice.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/MediClinic3/app/src/main/res/layout/activity_edit_paient_note.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/MediClinic3/app/src/main/res/layout/activity_join_clinic.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/MediClinic3/app/src/main/res/layout/activity_reminder_patient.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/MediClinic3/app/src/main/res/layout/clinic_list.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/MediClinic3/app/src/main/res/layout/p_clinic_list.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
