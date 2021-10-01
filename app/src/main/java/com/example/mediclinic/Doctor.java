@@ -1,6 +1,6 @@
 package com.example.mediclinic;
 
-public class Doctor {
+public  class Doctor {
     String DocName, ContactNumber, Gender, DOB, Address, Password, Email;
 
     public Doctor() {
