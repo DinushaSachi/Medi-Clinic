@@ -43,7 +43,7 @@ public class EditClinicActivity extends AppCompatActivity {
         descpt.setText(desc);
         dtTime.setText(dateTime);
 
-        // Edit function
+
         upBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

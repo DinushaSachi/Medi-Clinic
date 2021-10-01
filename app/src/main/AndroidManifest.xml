@@ -16,19 +16,7 @@
             android:name=".DoctorNotices"
             android:exported="true" />
         <activity
-            android:name=".reminderPatient"
-            android:exported="true" />
-        <activity
-            android:name=".Clinic"
-            android:exported="true" />
-        <activity
-            android:name=".doctorEditProfile"
-            android:exported="true" />
-        <activity
-            android:name=".patientEditProfile"
-            android:exported="true" />
-        <activity
-            android:name=".Patient"
+            android:name=".patient_delete_dialog"
             android:exported="true" />
         <activity
             android:name=".JoinClinicActivity"

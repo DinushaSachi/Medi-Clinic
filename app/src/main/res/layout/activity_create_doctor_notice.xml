@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateDoctorNote">
+    tools:context=".CreateDoctorNotice">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,32 +19,18 @@
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="421dp"
+            android:layout_width="521dp"
             android:layout_height="890dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/main2back" />
-
-        <!--        <ImageView-->
-        <!--            android:id="@+id/btnDelete"-->
-        <!--            android:layout_width="68dp"-->
-        <!--            android:layout_height="77dp"-->
-        <!--            android:layout_marginTop="16dp"-->
-        <!--            app:layout_constraintBottom_toTopOf="@+id/imageButton7"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintHorizontal_bias="0.097"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toTopOf="parent"-->
-        <!--            app:layout_constraintVertical_bias="0.65"-->
-        <!--            app:srcCompat="@drawable/doc_mini" />-->
+            app:srcCompat="@drawable/pattern_back" />
 
         <ImageView
             android:id="@+id/logo"
-            android:layout_width="163dp"
-            android:layout_height="127dp"
+            android:layout_width="93dp"
+            android:layout_height="101dp"
             android:layout_marginStart="164dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -52,21 +38,68 @@
             app:layout_constraintStart_toEndOf="@+id/btnDelete"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.078"
-            app:srcCompat="@drawable/mainlogo"
+            app:srcCompat="@drawable/logo2"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="38dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="156dp"
+            android:background="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.108"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dnote_ic_menu"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageView
+            android:id="@+id/btnDelete"
+            android:layout_width="68dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.097"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.65"
+            app:srcCompat="@drawable/doca2" />
+
+        <TextView
+            android:id="@+id/txtView4"
+            android:layout_width="396dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="#9572E8"
+            android:freezesText="false"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="@string/textNoticename"
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.259"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <ImageView
             android:id="@+id/imageView6"
-            android:layout_width="410dp"
-            android:layout_height="554dp"
+            android:layout_width="395dp"
+            android:layout_height="466dp"
             android:layout_marginTop="32dp"
-            android:foreground="@drawable/mainback"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.307"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/bottom_patternb"
             tools:ignore="UnknownId" />
 
         <LinearLayout
@@ -76,7 +109,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3">
+            app:layout_constraintTop_toBottomOf="@+id/txtView4"
+            app:layout_constraintVertical_bias="0.469">
 
             <TextView
                 android:id="@+id/textView7"
@@ -85,8 +119,8 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="15dp"
-                android:text="Note Name "
-                android:textColor="@color/black"
+                android:text="Notices Name "
+                android:textColor="@color/white"
                 android:textSize="18dp" />
 
             <EditText
@@ -94,11 +128,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/dnote_textboxwhite"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:paddingLeft="10dp"
-                android:paddingTop="5dp"
-                android:paddingRight="10dp"
                 android:textColor="#404040" />
 
             <TextView
@@ -109,7 +143,7 @@
                 android:layout_marginTop="25dp"
                 android:layout_marginBottom="15dp"
                 android:text="Description"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18dp" />
 
             <EditText
@@ -117,12 +151,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="121dp"
                 android:background="@drawable/dnote_textboxwhite"
+                android:paddingTop="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:ems="10"
                 android:gravity="start|top"
-                android:inputType="textMultiLine"
-                android:paddingLeft="10dp"
-                android:paddingTop="8dp"
-                android:paddingRight="10dp" />
+                android:inputType="textMultiLine" />
         </LinearLayout>
 
         <Button
@@ -133,38 +167,21 @@
             android:text="@string/btnsave"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textColorHighlight="#c3c3c3"
+            android:textColorHighlight="#FFFFFF"
             android:textSize="18sp"
             android:textStyle="bold"
             android:typeface="normal"
-            app:backgroundTint="#c3c3c3"
+            app:backgroundTint="#FA2BDCCD"
             app:cornerRadius="20dp"
+            app:icon="@drawable/dnote_ic_save1"
             app:layout_constraintBottom_toBottomOf="@+id/imageView6"
             app:layout_constraintEnd_toEndOf="@+id/imageView6"
-            app:layout_constraintHorizontal_bias="0.931"
+            app:layout_constraintHorizontal_bias="0.93"
             app:layout_constraintStart_toStartOf="@+id/imageView6"
             app:layout_constraintTop_toTopOf="@+id/imageView6"
-            app:layout_constraintVertical_bias="0.836" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="28dp"
-            android:text="Create Note"
-            android:textColor="@color/black"
-
-            android:textSize="30sp"
-            app:layout_constraintBottom_toTopOf="@+id/imageView6"
-            app:layout_constraintEnd_toStartOf="@+id/logo"
-            app:layout_constraintHorizontal_bias="0.285"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.388" />
+            app:layout_constraintVertical_bias="0.813" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

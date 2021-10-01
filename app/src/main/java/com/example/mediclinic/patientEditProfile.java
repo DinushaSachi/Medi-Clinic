@@ -1,7 +1,5 @@
 package com.example.mediclinic;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +7,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class patientEditProfile extends AppCompatActivity {
 
@@ -126,15 +129,4 @@ public class patientEditProfile extends AppCompatActivity {
             return false;
         }
     }
-
-    public void vieView(View view) {
-
-        Intent in = new Intent(patientEditProfile.this, Pat_dashboard.class);
-        in.putExtra("_patientName", _patientName);
-        in.putExtra("_patientcontactNo", _patientContactNo);
-        in.putExtra("_patientemail", _patientEmail);
-        in.putExtra("_patientdob", _patientDob);
-        in.putExtra("_patientaddress", _patientAddress);
-        in.putExtra("_patientgender", _patientGender);
-        startActivity(in);
-    }
+}

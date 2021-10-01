@@ -20,7 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
-public class ClinicAdapter extends RecyclerView.Adapter<com.example.mediclinic.ClinicAdapter.MyViewHolder> {
+public class ClinicAdapter extends RecyclerView.Adapter<ClinicAdapter.MyViewHolder> {
     private Context context;
     private ArrayList<Clinic> clinic1;
     public ClinicAdapter(Context context,ArrayList<Clinic> clinic1){
@@ -54,7 +54,7 @@ public class ClinicAdapter extends RecyclerView.Adapter<com.example.mediclinic.C
                         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Clinic Data").child(clinic1.getId());
                         databaseReference.removeValue();
                         Toast.makeText(context,"DELETED",Toast.LENGTH_SHORT).show();
-                        Intent i = new Intent(v.getContext(), com.example.mediclinic.Doc_dashboard.class);
+                        Intent i = new Intent(v.getContext(), Doc_dashboard.class);
                         v.getContext().startActivity(i);
                     }
                 });

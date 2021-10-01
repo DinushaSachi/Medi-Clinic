@@ -28,7 +28,7 @@ public class CreateClinicActivity extends AppCompatActivity {
         add = findViewById(R.id.saveBtn);
 
         database = FirebaseDatabase.getInstance().getReference().child("Clinic Data");
-        // add
+
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,7 +41,6 @@ public class CreateClinicActivity extends AppCompatActivity {
                 dTime =  date.getText().toString();
                 descript = desc.getText().toString();
 
-                // validation
                 if(clinic.equals("")){
                     Toast.makeText(com.example.mediclinic.CreateClinicActivity.this, "User Name Required!", Toast.LENGTH_SHORT).show();
                 }
@@ -49,13 +48,13 @@ public class CreateClinicActivity extends AppCompatActivity {
                     Toast.makeText(com.example.mediclinic.CreateClinicActivity.this, "User SureName Required!", Toast.LENGTH_SHORT).show();
                 }
                 else if(hosp.equals("")){
-                    Toast.makeText(com.example.mediclinic.CreateClinicActivity.this, "Hospital Name Required!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(com.example.mediclinic.CreateClinicActivity.this, "User UserEmail Required!", Toast.LENGTH_SHORT).show();
                 }
                 else if(dTime.equals("")){
-                    Toast.makeText(com.example.mediclinic.CreateClinicActivity.this, "Date and time Required!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(com.example.mediclinic.CreateClinicActivity.this, "User UserEmail Required!", Toast.LENGTH_SHORT).show();
                 }
                 else if(descript.equals("")){
-                    Toast.makeText(com.example.mediclinic.CreateClinicActivity.this, "Description Required!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(com.example.mediclinic.CreateClinicActivity.this, "User UserEmail Required!", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     com.example.mediclinic.Clinic clinic1 = new com.example.mediclinic.Clinic(userId,clinic,doctor,hosp,dTime,descript);

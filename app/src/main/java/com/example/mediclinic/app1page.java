@@ -46,4 +46,3 @@ public class app1page extends AppCompatActivity {
 
     }
 }
-}

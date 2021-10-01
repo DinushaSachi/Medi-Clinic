@@ -1,7 +1,5 @@
 package com.example.mediclinic;
 
-
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -26,7 +24,7 @@ public class PatientViewActivity extends AppCompatActivity {
     String clinicName;
     private RecyclerView recyclerView;
     private ArrayList<Patient> patient1;
-    private com.project.doctorapp.P_PatientAdapter p_patientAdapter;
+    private  P_PatientAdapter p_patientAdapter;
     DatabaseReference dbRef;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +48,7 @@ public class PatientViewActivity extends AppCompatActivity {
                 Patient uData = snapshot1.getValue(Patient.class);
                 patient1.add(uData);
             }
-            p_patientAdapter = new com.project.doctorapp.P_PatientAdapter(com.project.doctorapp.PatientViewActivity.this,patient1);
+            p_patientAdapter = new  P_PatientAdapter( PatientViewActivity.this,patient1);
             recyclerView.setAdapter(p_patientAdapter);
         }
 

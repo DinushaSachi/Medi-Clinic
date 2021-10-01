@@ -1,9 +1,6 @@
 package com.example.mediclinic;
 
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.ProgressDialog;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -14,6 +11,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.app.ProgressDialog;
+
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class CreateDoctorProfileActivity extends AppCompatActivity {
 
@@ -54,6 +58,7 @@ public class CreateDoctorProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+
                 String docN = docName.getText().toString().trim();
                 String ContNo = ContactNo.getText().toString().trim();
                 String Email = email.getText().toString().trim();
@@ -61,6 +66,7 @@ public class CreateDoctorProfileActivity extends AppCompatActivity {
                 String address = Address.getText().toString().trim();
                 String gender = Gender.getText().toString().trim();
                 String password = Password.getText().toString().trim();
+
 
                 if (TextUtils.isEmpty(docN)) {
                     Toast.makeText(CreateDoctorProfileActivity.this, "Please Enter your user name", Toast.LENGTH_LONG).show();
@@ -85,16 +91,23 @@ public class CreateDoctorProfileActivity extends AppCompatActivity {
                 } else if (ContNo.length() > 10) {
                     ContactNo.setError("Contact number cannot have more than 10 numbers");
                     return;
+
+
                 }else {
+
+
+
                     loadingBar.setTitle("Create Account");
                     loadingBar.setMessage("Please wait, while we are checking the account");
                     loadingBar.setCanceledOnTouchOutside(false);
                     loadingBar.show();
+
                     FirebaseDatabase database = FirebaseDatabase.getInstance();
                     DatabaseReference ref = database.getReference("Doctor");
 
                     Doctor doctor = new Doctor(docN, ContNo, gender, dob, address, password, Email);
                     ref.child(docN).setValue(doctor);
+
                     docName.setText("");
                     Gender.setText("");
                     ContactNo.setText("");
